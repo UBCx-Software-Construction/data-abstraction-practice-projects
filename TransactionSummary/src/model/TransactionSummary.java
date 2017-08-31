@@ -54,5 +54,11 @@ public class TransactionSummary {
         return null;
     }
 
+    // EFFECTS: returns true if the given transaction is contained within the list of transactions
+    public boolean contains(Transaction t) {
+        // TODO: complete the implementation of this method
+        return false;
+    }
+
 
 }

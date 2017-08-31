@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import static model.TransactionType.*;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TransactionSummaryTest {
 
@@ -44,7 +45,7 @@ public class TransactionSummaryTest {
         assertEquals(testSummary.getNumTransactions(), 7);
         testSummary.addTransaction(testTransaction);
         assertEquals(testSummary.getNumTransactions(), 8);
-        assertEquals(testSummary.getTransactions().get(7), testTransaction);
+        assertTrue(testSummary.contains(testTransaction));
     }
 
     @Test
